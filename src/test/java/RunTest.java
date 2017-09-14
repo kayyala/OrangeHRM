@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(format = {"pretty", "html:target/Hrm-html-report",
         "json:target/HRM.json"}
-        , tags = {"@login"}
+        , tags = {"@addemp"}
 )
 public class RunTest {
 
