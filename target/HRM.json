@@ -1,0 +1,98 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 18432496415,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "admin Login and logout",
+        "description": "",
+        "id": "orangehrm-login/out;admin-login-and-logout",
+        "after": [
+          {
+            "result": {
+              "duration": 3799471384,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 747527971,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am navigating to orrangeHRM Website",
+            "match": {
+              "location": "MyStepdefs.i_am_navigating_to_orrangeHRM_Website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8932063998,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter username and password",
+            "match": {
+              "location": "MyStepdefs.i_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28052,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I calick on Login button",
+            "match": {
+              "location": "MyStepdefs.i_calick_on_Login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7204357422,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should login sucessfuly",
+            "match": {
+              "location": "MyStepdefs.i_should_login_sucessfuly()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "OrangeHrm Login/out",
+    "description": "",
+    "id": "orangehrm-login/out",
+    "keyword": "Feature",
+    "uri": "HRM.feature"
+  }
+]
