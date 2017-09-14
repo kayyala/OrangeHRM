@@ -18,7 +18,7 @@ public class BasePage {
     public void openBrowser() throws IOException {
         System.out.println("opening browser");
         Properties prop = new Properties();
-        FileInputStream fileInputStreamfs = new FileInputStream("C:\\Users\\Sudhakar\\IdeaProjects\\ORANGEHRM\\src\\main\\resources\\config.properties");
+        FileInputStream fileInputStreamfs = new FileInputStream("C:\\Users\\Sudhakar\\IdeaProjects\\ORANGEHRM\\ORANGEHRM\\src\\main\\resources\\config.properties");
         prop.load(fileInputStreamfs);
         String url = prop.getProperty("url");
         String browser = prop.getProperty("browser");

@@ -11,7 +11,7 @@ public class MyStepdefs {
     @Given("^I am navigating to orrangeHRM Website$")
     public void i_am_navigating_to_orrangeHRM_Website() throws Throwable {
         homePage.isOnHomePage();
-//hhjdhj
+
     }
 
     @When("^I enter username and password$")

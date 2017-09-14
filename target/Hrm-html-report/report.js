@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 18432496415,
+  "duration": 15947455855,
   "status": "passed"
 });
 formatter.scenario({
@@ -48,32 +48,32 @@ formatter.match({
   "location": "MyStepdefs.i_am_navigating_to_orrangeHRM_Website()"
 });
 formatter.result({
-  "duration": 747527971,
+  "duration": 233388891,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepdefs.i_enter_username_and_password()"
 });
 formatter.result({
-  "duration": 8932063998,
+  "duration": 10348914031,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepdefs.i_calick_on_Login_button()"
 });
 formatter.result({
-  "duration": 28052,
+  "duration": 32841,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepdefs.i_should_login_sucessfuly()"
 });
 formatter.result({
-  "duration": 7204357422,
+  "duration": 6639287552,
   "status": "passed"
 });
 formatter.after({
-  "duration": 3799471384,
+  "duration": 22578,
   "status": "passed"
 });
 });
