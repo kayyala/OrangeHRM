@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc4b0f9-dab4-4851-bde8-ee0f8159b534" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BasePage.class" afterPath="$PROJECT_DIR$/target/classes/BasePage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/HomePage.class" afterPath="$PROJECT_DIR$/target/classes/HomePage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Hooks.class" afterPath="$PROJECT_DIR$/target/test-classes/Hooks.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/MyStepdefs.class" afterPath="$PROJECT_DIR$/target/test-classes/MyStepdefs.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/BasePage.java" afterPath="$PROJECT_DIR$/src/main/java/BasePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Hooks.java" afterPath="$PROJECT_DIR$/src/test/java/Hooks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/MyStepdefs.java" afterPath="$PROJECT_DIR$/src/test/java/MyStepdefs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HRM.json" afterPath="$PROJECT_DIR$/target/HRM.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Hrm-html-report/report.js" afterPath="$PROJECT_DIR$/target/Hrm-html-report/report.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config.properties" afterPath="$PROJECT_DIR$/target/classes/config.properties" />
     </list>
     <list id="cf592950-2198-4556-bd7b-c300a5bc50e5" name="New changelist" comment="add comment" />
     <ignored path="ORANGEHRM.iws" />
@@ -650,7 +639,13 @@
       <option name="project" value="LOCAL" />
       <updated>1505376299902</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add some changes">
+      <created>1505379955644</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1505379955644</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -724,7 +719,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="ADDED" />
     <MESSAGE value="added in to git" />
-    <option name="LAST_COMMIT_MESSAGE" value="added in to git" />
+    <MESSAGE value="add some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
