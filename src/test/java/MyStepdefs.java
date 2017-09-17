@@ -10,6 +10,7 @@ public class MyStepdefs {
     HomePage homePage = new HomePage();
     AddEMP addEMP = new AddEMP();
     SearchEMP searchEMP = new SearchEMP();
+    DeleteEMP deleteEMP= new DeleteEMP();
 
     @Given("^I am navigating to orrangeHRM Website$")
     public void i_am_navigating_to_orrangeHRM_Website() throws Throwable {
@@ -60,6 +61,6 @@ public class MyStepdefs {
 
     @And("^I select by name and delete employee$")
     public void iSelectByNameAndDeleteEmployee() throws Throwable {
-
+deleteEMP.deleteEmp();
     }
 }

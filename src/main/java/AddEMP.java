@@ -10,14 +10,15 @@ public class AddEMP extends BasePage {
 
     public void newPIM() throws Exception {
         driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
-        //driver.findElement(By.xpath("//*[@id='menu_pim_viewPimModule']/a/span[1]")).click();
+        driver.findElement(By.xpath("//*[@id='menu_pim_viewPimModule']/a/span[1]")).click();
        // driver.findElement(By.xpath(".//*[@id='menu_pim_addEmployee']/span[2]")).click();
 
-        Thread.sleep(2000);
     }
 
     public void enterfield() throws Exception {
         Thread.sleep(2000);
+        driver.findElement(By.xpath(".//*[@id='menu_pim_addEmployee']/span[2]")).click();
+
         driver.findElement(By.id("firstName")).sendKeys("sri1");
 
         driver.findElement(By.xpath(".//*[@id='lastName']")).sendKeys("beckamrr");
