@@ -1,4 +1,3 @@
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -9,7 +8,8 @@ import cucumber.api.java.en.When;
  */
 public class MyStepdefs {
     HomePage homePage = new HomePage();
-    AddEMP addEMP= new AddEMP();
+    AddEMP addEMP = new AddEMP();
+    SearchEMP searchEMP = new SearchEMP();
 
     @Given("^I am navigating to orrangeHRM Website$")
     public void i_am_navigating_to_orrangeHRM_Website() throws Throwable {
@@ -40,21 +40,22 @@ public class MyStepdefs {
 
     @Then("^I click on PIM button$")
     public void iClickOnPIMButton() throws Throwable {
-addEMP.newEMP();
+        addEMP.newPIM();
     }
 
     @And("^I add new Employee$")
     public void iAddNewEmployee() throws Throwable {
-addEMP.enterfield();
+        addEMP.enterfield();
     }
 
     @And("^I click on Employee list$")
     public void iClickOnEmployeeList() throws Throwable {
-
+        searchEMP.emplist();
     }
 
     @Then("^I Search by Employee Name$")
     public void iSearchByEmployeeName() throws Throwable {
+        searchEMP.searchempname();
     }
 
     @And("^I select by name and delete employee$")

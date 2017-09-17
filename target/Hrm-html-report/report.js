@@ -7,86 +7,109 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 11309717341,
+  "duration": 10280642769,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 11,
-  "name": "PIM add new Employee",
+  "line": 20,
+  "name": "PIM search Employee",
   "description": "",
-  "id": "orangehrm-login/out;pim-add-new-employee",
+  "id": "orangehrm-login/out;pim-search-employee",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 10,
-      "name": "@addemp"
+      "line": 19,
+      "name": "@search"
     }
   ]
 });
 formatter.step({
-  "line": 12,
+  "line": 21,
   "name": "I am navigating to orrangeHRM Website",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 13,
+  "line": 22,
   "name": "I enter username and password",
   "keyword": "When "
 });
 formatter.step({
-  "line": 14,
+  "line": 23,
   "name": "I click on Login button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 24,
   "name": "I click on PIM button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 16,
-  "name": "I add new Employee",
+  "line": 25,
+  "name": "I click on Employee list",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 26,
+  "name": "I Search by Employee Name",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 27,
+  "name": "I should logout sucessfuly",
   "keyword": "And "
 });
 formatter.match({
   "location": "MyStepdefs.i_am_navigating_to_orrangeHRM_Website()"
 });
 formatter.result({
-  "duration": 215499688,
+  "duration": 204923259,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepdefs.i_enter_username_and_password()"
 });
 formatter.result({
-  "duration": 11489916883,
+  "duration": 11082636814,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepdefs.i_calick_on_Login_button()"
 });
 formatter.result({
-  "duration": 37632,
+  "duration": 25316,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepdefs.iClickOnPIMButton()"
 });
 formatter.result({
-  "duration": 5039453951,
+  "duration": 2012638620,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.iAddNewEmployee()"
+  "location": "MyStepdefs.iClickOnEmployeeList()"
 });
 formatter.result({
-  "duration": 4763304350,
-  "error_message": "org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been \"select\" but was \"input\"\nBuild info: version: \u00272.53.0\u0027, revision: \u002735ae25b1534ae328c771e0856c93e187490ca824\u0027, time: \u00272016-03-15 10:43:46\u0027\nSystem info: host: \u0027Sudhakar-PC\u0027, ip: \u0027192.168.0.65\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027x86\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_144\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.Select.\u003cinit\u003e(Select.java:47)\r\n\tat AddEMP.enterfield(AddEMP.java:23)\r\n\tat MyStepdefs.iAddNewEmployee(MyStepdefs.java:48)\r\n\tat ✽.And I add new Employee(HRM.feature:16)\r\n",
-  "status": "failed"
+  "duration": 3157975221,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MyStepdefs.iSearchByEmployeeName()"
+});
+formatter.result({
+  "duration": 4113445160,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MyStepdefs.iShouldLogoutSucessfuly()"
+});
+formatter.result({
+  "duration": 9453688955,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 33526,
+  "duration": 1667261240,
   "status": "passed"
 });
 });
