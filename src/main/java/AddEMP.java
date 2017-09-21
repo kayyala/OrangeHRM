@@ -1,5 +1,7 @@
-import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
 
 import java.util.concurrent.TimeUnit;
 
@@ -7,27 +9,40 @@ import java.util.concurrent.TimeUnit;
  * Created by Sudhakar on 14/09/2017.
  */
 public class AddEMP extends BasePage {
+    WebDriver driver;
+    @FindBy(xpath = "//*[@id='menu_pim_viewPimModule']/a/span[1]")
+    WebElement PIM;
+    @FindBy(xpath = ".//*[@id='menu_pim_addEmployee']/span[2]")
+    WebElement getAdd_emp;
+    @FindBy(id = "firstName")
+    WebElement add_fname;
+    @FindBy(xpath = ".//*[@id='lastName']")
+    WebElement add_lname;
+    @FindBy(xpath = "/.//*[@id='location_inputfileddiv']/div/input")
+    WebElement location_dropdown_select;
+    @FindBy(xpath = "//div[@class='select-wrapper initialized']/ul/li[5]/span")
+    WebElement location_select;
+    @FindBy(xpath = ".//*[@id='systemUserSaveBtn']")
+    WebElement savebtn;
+
 
     public void newPIM() throws Exception {
         driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("//*[@id='menu_pim_viewPimModule']/a/span[1]")).click();
-       // driver.findElement(By.xpath(".//*[@id='menu_pim_addEmployee']/span[2]")).click();
-
+        PIM.click();
+        // driver.findElement(By.xpath(".//*[@id='menu_pim_addEmployee']/span[2]")).click();
     }
 
     public void enterfield() throws Exception {
         Thread.sleep(2000);
-        driver.findElement(By.xpath(".//*[@id='menu_pim_addEmployee']/span[2]")).click();
-
-        driver.findElement(By.id("firstName")).sendKeys("sri1");
-
-        driver.findElement(By.xpath(".//*[@id='lastName']")).sendKeys("beckamrr");
+        getAdd_emp.click();
+        add_fname.sendKeys("sri1");
+        add_lname.sendKeys("beckamrr");
         Thread.sleep(2000);
         Actions actions = new Actions(driver);
-        actions.moveToElement(driver.findElement(By.xpath(".//*[@id='location_inputfileddiv']/div/input"))).click().build().perform();
+        actions.moveToElement(location_dropdown_select).click().build().perform();
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//div[@class='select-wrapper initialized']/ul/li[5]/span")).click();
-        driver.findElement(By.xpath(".//*[@id='systemUserSaveBtn']")).click();
+        location_select.click();
+        savebtn.click();
 
     }
 

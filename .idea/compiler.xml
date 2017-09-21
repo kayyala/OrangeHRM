@@ -24,9 +24,17 @@
         <processorPath useClasspath="true" />
         <module name="ORANGEHRM" />
       </profile>
+      <profile default="false" name="Annotation profile for OrangeHRM" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="OrangeHRM" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ORANGEHRM" target="1.7" />
+      <module name="OrangeHRM" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

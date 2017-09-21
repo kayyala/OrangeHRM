@@ -11,6 +11,7 @@ public class Hooks {
     BasePage base = new BasePage();
     @Before
     public  void setUp() throws IOException {
+
         base.openBrowser();
     }
     @After

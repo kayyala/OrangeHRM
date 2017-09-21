@@ -1,6 +1,6 @@
 Feature: OrangeHrm Login/out
 
-  @login
+  @loginpage
   Scenario: admin Login and logout
     Given I am navigating to orrangeHRM Website
     When I enter username and password

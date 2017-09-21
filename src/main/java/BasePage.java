@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.PageFactory;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -12,8 +13,11 @@ import java.util.Properties;
  * Created by Sudhakar on 13/09/2017.
  */
 public class BasePage {
-    static WebDriver driver;
-
+     WebDriver driver;
+    public BasePage(WebDriver driver){
+        this.driver=driver;
+        PageFactory.initElements(driver, this);
+    }
     @BeforeClass
     public void openBrowser() throws IOException {
         System.out.println("opening browser");
@@ -25,15 +29,16 @@ public class BasePage {
         System.out.print("browser: " + browser);
         switch (browser) {
             case "chrome":
-                System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sudhakar\\SeleniumDriver\\chromedriver_win32\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver","C:\\Users\\Sudhakar\\SeleniumDriver\\SeleniumDriver\\chromedriver_win32\\chromedriver.exe");
                 driver = new ChromeDriver();
                 break;
-            case "ie":
-                System.setProperty("webdriver.ie.driver", "C:\\Program Files\\SeleniumDrivers\\IEDriver\\IEDriverServer.exe");
-                driver = (new InternetExplorerDriver());
+            case "firefox":
+                System.setProperty("webdriver.gecko.driver","C:\\Users\\Sudhakar\\SeleniumDriver\\SeleniumDriver\\geckodriver-v0.11.1-win32\\geckodriver.exe");
+                driver= new FirefoxDriver();
                 break;
-            default:
-                driver = (new FirefoxDriver());
+                default:
+                System.setProperty("webdriver.ie.driver", "\\SeleniumDrivers\\IEDriver\\IEDriverServer.exe");
+                driver = (new InternetExplorerDriver());
                 break;
         }
         driver.get(url);

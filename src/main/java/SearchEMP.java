@@ -1,27 +1,38 @@
 import org.junit.Assert;
-import org.openqa.selenium.By;
-
-import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 /**
  * Created by Sudhakar on 17/09/2017.
  */
 public class SearchEMP extends BasePage {
+    WebDriver driver;
+    @FindBy(xpath = ".//*[@id='menu_pim_viewEmployeeList']/span[2]")
+    WebElement PIM_VIEW;
+    @FindBy(xpath = ".//*[@id='employee_name_quick_filter_employee_list_value']")
+    WebElement search_byempname;
+    @FindBy(xpath = ".//*[@id='quick_search_icon']")
+    WebElement search_click;
+    @FindBy(xpath = ".//*[text()='sri  beckamrr ']")
+    WebElement asserting_byname;
+
 
     public void emplist() throws InterruptedException {
         Thread.sleep(2000);
-        driver.findElement(By.xpath(".//*[@id='menu_pim_viewEmployeeList']/span[2]")).click();
+        // driver.findElement(By.xpath(".//*[@id='menu_pim_viewEmployeeList']/span[2]")).click();
+        PIM_VIEW.click();
         //.//*[@id='menu_pim_viewEmployeeList']/span[2]
 
     }
 
     public void searchempname() throws InterruptedException {
         Thread.sleep(2000);
-        driver.findElement(By.xpath(".//*[@id='employee_name_quick_filter_employee_list_value']")).sendKeys("dad");
-        driver.findElement(By.xpath(".//*[@id='quick_search_icon']")).click();
-        String actual = driver.findElement(By.xpath("//*[text()='sri  beckamrr ']")).getText();
+        search_byempname.sendKeys("dad");
+        search_click.click();
+        String actual = asserting_byname.getText();
         String expected = "sri beckamrr";
-        System.out.println("expected result is  "+expected);
+        System.out.println("expected result is  " + expected);
         Assert.assertEquals(expected, actual);
         System.out.println("sucessfuly seach by name ");
     }
