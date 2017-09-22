@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Sudhakar on 14/09/2017.
  */
-public class AddEMP extends BasePage {
+public class AddEMP  {
     WebDriver driver;
     @FindBy(xpath = "//*[@id='menu_pim_viewPimModule']/a/span[1]")
     WebElement PIM;
@@ -24,7 +24,10 @@ public class AddEMP extends BasePage {
     WebElement location_select;
     @FindBy(xpath = ".//*[@id='systemUserSaveBtn']")
     WebElement savebtn;
+    public AddEMP(WebDriver driver){
+        this.driver=driver;
 
+    }
 
     public void newPIM() throws Exception {
         driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);

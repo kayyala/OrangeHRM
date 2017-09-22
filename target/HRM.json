@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 20852352125,
+              "duration": 8996797241,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 21895,
+              "duration": 23262,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 592384775,
+              "duration": 219851226,
               "status": "passed"
             },
             "line": 5,
@@ -46,8 +46,8 @@
           },
           {
             "result": {
-              "duration": 665038,
-              "error_message": "java.lang.NullPointerException\r\n\tat HomePage.login(HomePage.java:42)\r\n\tat MyStepdefs.i_enter_username_and_password(MyStepdefs.java:23)\r\n\tat ✽.When I enter username and password(src/main/resources/HRM.feature:6)\r\n",
+              "duration": 633573,
+              "error_message": "java.lang.NullPointerException\r\n\tat MyStepdefs.i_enter_username_and_password(MyStepdefs.java:30)\r\n\tat ✽.When I enter username and password(src/main/resources/HRM.feature:6)\r\n",
               "status": "failed"
             },
             "line": 6,

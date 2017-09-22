@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 20852352125,
+  "duration": 8996797241,
   "status": "passed"
 });
 formatter.scenario({
@@ -53,15 +53,15 @@ formatter.match({
   "location": "MyStepdefs.i_am_navigating_to_orrangeHRM_Website()"
 });
 formatter.result({
-  "duration": 592384775,
+  "duration": 219851226,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepdefs.i_enter_username_and_password()"
 });
 formatter.result({
-  "duration": 665038,
-  "error_message": "java.lang.NullPointerException\r\n\tat HomePage.login(HomePage.java:42)\r\n\tat MyStepdefs.i_enter_username_and_password(MyStepdefs.java:23)\r\n\tat ✽.When I enter username and password(src/main/resources/HRM.feature:6)\r\n",
+  "duration": 633573,
+  "error_message": "java.lang.NullPointerException\r\n\tat MyStepdefs.i_enter_username_and_password(MyStepdefs.java:30)\r\n\tat ✽.When I enter username and password(src/main/resources/HRM.feature:6)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -83,7 +83,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 21895,
+  "duration": 23262,
   "status": "passed"
 });
 });

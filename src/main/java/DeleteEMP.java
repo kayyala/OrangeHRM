@@ -1,3 +1,4 @@
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -6,8 +7,8 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Sudhakar on 17/09/2017.
  */
-public class DeleteEMP extends BasePage {
-
+public class DeleteEMP {
+    WebDriver driver;
     @FindBy(xpath = ".//*[@id='employee_name_quick_filter_employee_list_value']")
     WebElement searchby_empname;
     @FindBy(xpath = "//*[@id='quick_search_icon']")
@@ -21,6 +22,10 @@ public class DeleteEMP extends BasePage {
     @FindBy(xpath = "//*[@ng-click='modal.confirm()']")
     WebElement confirm_delete;
 
+    public DeleteEMP(WebDriver driver) {
+        this.driver = driver;
+
+    }
 
     public void deleteEmp() throws InterruptedException {
 

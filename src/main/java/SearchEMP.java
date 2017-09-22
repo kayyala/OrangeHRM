@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 /**
  * Created by Sudhakar on 17/09/2017.
  */
-public class SearchEMP extends BasePage {
+public class SearchEMP {
     WebDriver driver;
     @FindBy(xpath = ".//*[@id='menu_pim_viewEmployeeList']/span[2]")
     WebElement PIM_VIEW;
@@ -16,11 +16,14 @@ public class SearchEMP extends BasePage {
     WebElement search_click;
     @FindBy(xpath = ".//*[text()='sri  beckamrr ']")
     WebElement asserting_byname;
+    public SearchEMP(WebDriver driver){
+        this.driver=driver;
 
+    }
 
     public void emplist() throws InterruptedException {
         Thread.sleep(2000);
-        // driver.findElement(By.xpath(".//*[@id='menu_pim_viewEmployeeList']/span[2]")).click();
+//         driver.findElement(By.xpath(".//*[@id='menu_pim_viewEmployeeList']/span[2]")).click();
         PIM_VIEW.click();
         //.//*[@id='menu_pim_viewEmployeeList']/span[2]
 

@@ -3,7 +3,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.support.PageFactory;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,10 +13,7 @@ import java.util.Properties;
  */
 public class BasePage {
      WebDriver driver;
-    public BasePage(WebDriver driver){
-        this.driver=driver;
-        PageFactory.initElements(driver, this);
-    }
+
     @BeforeClass
     public void openBrowser() throws IOException {
         System.out.println("opening browser");
