@@ -2,12 +2,13 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 /**
  * Created by Sudhakar on 17/09/2017.
  */
-public class SearchEMP {
-    WebDriver driver;
+public class SearchEMP extends BasePage{
+//    WebDriver driver;
     @FindBy(xpath = ".//*[@id='menu_pim_viewEmployeeList']/span[2]")
     WebElement PIM_VIEW;
     @FindBy(xpath = ".//*[@id='employee_name_quick_filter_employee_list_value']")
@@ -17,7 +18,8 @@ public class SearchEMP {
     @FindBy(xpath = ".//*[text()='sri  beckamrr ']")
     WebElement asserting_byname;
     public SearchEMP(WebDriver driver){
-        this.driver=driver;
+//        this.driver=driver;
+        PageFactory.initElements(driver,this);
 
     }
 

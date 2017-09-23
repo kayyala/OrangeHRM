@@ -1,14 +1,13 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.PageFactory;
 
 /**
  * Created by Sudhakar on 17/09/2017.
  */
-public class DeleteEMP {
-    WebDriver driver;
+public class DeleteEMP extends BasePage {
+//    WebDriver driver;
     @FindBy(xpath = ".//*[@id='employee_name_quick_filter_employee_list_value']")
     WebElement searchby_empname;
     @FindBy(xpath = "//*[@id='quick_search_icon']")
@@ -23,14 +22,15 @@ public class DeleteEMP {
     WebElement confirm_delete;
 
     public DeleteEMP(WebDriver driver) {
-        this.driver = driver;
+//        this.driver = driver;
+        PageFactory.initElements(driver,this);
 
     }
 
     public void deleteEmp() throws InterruptedException {
 
 
-        driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
         searchby_empname.sendKeys("dad");
         Thread.sleep(10000);
 //        driver.findElement(By.xpath(".//*[@id='employee_name_quick_filter_employee_list_value']")).sendKeys(Keys.ENTER);

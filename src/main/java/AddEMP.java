@@ -2,14 +2,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Sudhakar on 14/09/2017.
  */
-public class AddEMP  {
-    WebDriver driver;
+public class AddEMP extends BasePage  {
+//    WebDriver driver;
     @FindBy(xpath = "//*[@id='menu_pim_viewPimModule']/a/span[1]")
     WebElement PIM;
     @FindBy(xpath = ".//*[@id='menu_pim_addEmployee']/span[2]")
@@ -25,7 +26,8 @@ public class AddEMP  {
     @FindBy(xpath = ".//*[@id='systemUserSaveBtn']")
     WebElement savebtn;
     public AddEMP(WebDriver driver){
-        this.driver=driver;
+//        this.driver=driver;
+        PageFactory.initElements(driver,this);
 
     }
 

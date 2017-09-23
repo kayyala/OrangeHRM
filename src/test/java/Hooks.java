@@ -7,7 +7,7 @@ import java.io.IOException;
 /**
  * Created by Sudhakar on 13/09/2017.
  */
-public class Hooks {
+public class Hooks extends BasePage{
     BasePage base = new BasePage();
     @Before
     public  void setUp() throws IOException {

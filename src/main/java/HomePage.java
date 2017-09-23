@@ -8,13 +8,15 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Sudhakar on 13/09/2017.
  */
-public class HomePage {
+public class HomePage extends BasePage {
 
-  WebDriver driver;
+
 
 
   public void isOnHomePage() {
     // return driver.getCurrentUrl();
+//    System.out.println("IT'S LOGIN PAGE   ");
+
   }
 
   @FindBy(xpath = ".//*[@id='txtUsername")
@@ -33,7 +35,7 @@ public class HomePage {
   WebElement iframe;
 
   public HomePage(WebDriver driver) {
-    this.driver = driver;
+//    this.driver = driver;
     PageFactory.initElements(driver, this);
   }
 
